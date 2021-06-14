@@ -1,0 +1,10 @@
+header.header {
+    a.navbar-brand{
+        color: $color_primary;
+        font-size: 3rem;
+        font-weight: $fw;
+        &:hover{
+            color: $color_primary;
+        }
+    }
+}

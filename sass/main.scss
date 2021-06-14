@@ -1,0 +1,64 @@
+// $color: purple;
+
+// .title{
+//     background-color: $color;
+// }
+// .content{
+//     color: $color;
+//     .content-child{
+//         background-color: red;
+//     }
+// }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "../sass/base/reset";
+@import "./helpers/variable";
+@import "./pages/home";
+@import "./components/";
+
+$color_primary: #2a73dd;
+$fw: 700;
+
+header.header {
+    a.navbar-brand{
+        color: $color_primary;
+        font-size: 3rem;
+        font-weight: $fw;
+        &:hover{
+            color: $color_primary;
+        }
+    }
+    div#navbarNav{
+        ul.navbar-nav{
+            li.nav-item{
+                margin: 0 2rem;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    background-color: $color_primary;
+                    content: "";
+                    width: 0%;
+                    height: 3px;
+                    transition: all 0.35s;
+                }
+                &.active::after{
+                    width: 100%;
+                }
+                &:hover::after{
+                    width: 100%;
+                }
+                a.nav-link{
+                    color: $color_primary;
+                    font-size: 2rem;
+                    }
+        }
+    }}
+}

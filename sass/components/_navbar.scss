@@ -1,0 +1,31 @@
+header.header {
+    div#navbarNav{
+        ul.navbar-nav{
+            li.nav-item{
+                margin: 0 2rem;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    background-color: $color_primary;
+                    content: "";
+                    width: 0%;
+                    height: 3px;
+                    transition: all 0.35s;
+                }
+                &.active::after{
+                    width: 100%;
+                }
+                &:hover::after{
+                    width: 100%;
+                }
+                a.nav-link{
+                    color: $color_primary;
+                    font-size: 2rem;
+                    }
+        }
+    }}
+}

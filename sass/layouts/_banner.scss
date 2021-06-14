@@ -1,0 +1,60 @@
+section.banner{
+    background: url(../../img/product-header-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    div.banner-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p.banner-title{
+            color: $color_primary;
+            font-size: 70px;
+            font-weight: 700;
+            }
+        }
+        p.banner-subtitle{
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #1d365e;
+            letter-spacing: 0.015rem;
+            margin-bottom: 30px;
+        }
+        p.banner-content{
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #656774;
+            margin-bottom: 25px;
+        }
+        div{
+            button.banner-btn-info{
+                background: transparent;
+                padding: 13.5px 44px;
+                border: 2px solid #2a73dd;
+                border-radius: 8px;
+                letter-spacing: 0.03rem;
+                font-size: 14px;
+                font-weight: 600;
+                color: #2a73dd;
+                box-shadow: 0 3px 6px #c9d8f4;
+                transition: .5s;
+            }
+
+            }
+            button.banner-btn-shop{
+                background: linear-gradient(120deg,     #60a4f4, #2a73dd);
+                padding: 15.5px 46px;
+                border: none;
+                border-radius: 8px;
+                letter-spacing: 0.03rem;
+                font-size: 14px;
+                font-weight: 600;
+                color: #fff;
+                transition: .5s;
+                }
+        }
+    div.banner-right{
+        img{
+            width: 100%;
+
+        }
+    }
